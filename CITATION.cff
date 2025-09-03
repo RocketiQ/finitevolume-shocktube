@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: finitevolume-shocktube
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Patel
+    given-names: Samarth
+    affiliation: RocketiQ
+version: 0.1.0
