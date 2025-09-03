@@ -1,4 +1,5 @@
-import yaml, numpy as np
+import yaml
+import numpy as np
 from src.roe.solver import run_case
 
 def test_mass_near_conserved():
