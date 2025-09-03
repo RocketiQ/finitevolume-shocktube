@@ -1,4 +1,8 @@
-import os, json, time, argparse, yaml
+import os
+import json
+import time
+import argparse
+import yaml
 import matplotlib.pyplot as plt
 from src.roe.solver import run_case
 
@@ -19,7 +23,8 @@ def main():
     plt.figure()
     plt.plot(out["x"], out["rho"])
     plt.title(f"Density (t={out['t']:.3f})")
-    plt.xlabel("x"); plt.ylabel("rho")
+    plt.xlabel("x")
+    plt.ylabel("rho")
     plt.tight_layout()
     plt.savefig("outputs/density.png", dpi=150)
     plt.close()
