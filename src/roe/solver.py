@@ -19,9 +19,16 @@ def run_case(params: dict) -> dict:
 
     # Sod IC
     mid  = nx // 2
-    rho0 = np.empty(nx); u0 = np.zeros(nx); p0 = np.empty(nx)
-    rho0[:mid] = 1.0;   rho0[mid:] = 0.125
-    p0[:mid]   = 1.0;   p0[mid:]   = 0.1
+    
+    rho0 = np.empty(nx)
+    u0 = np.zeros(nx)
+    p0 = np.empty(nx)
+    
+    rho0[:mid] = 1.0
+    rho0[mid:] = 0.125
+
+    p0[:mid] = 1.0
+    p0[mid:] = 0.1
 
     E0 = p0 / ((gamma - 1.0) * rho0) + 0.5 * u0**2
     q  = np.vstack([rho0, rho0 * u0, rho0 * E0])
