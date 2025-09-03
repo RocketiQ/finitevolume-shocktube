@@ -1,0 +1,5 @@
+case: sod
+nx: 100
+cfl: 0.5
+t_end: 0.20
+gamma: 1.4
